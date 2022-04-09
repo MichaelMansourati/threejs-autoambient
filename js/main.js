@@ -30,4 +30,9 @@ const rendering = function() {
     scene.rotation.x -= 0.01;
     renderer.render(scene, camera);
 };
+
+const light = new THREE.PointLight(0xFFFFFF, 1, 100);
+light.position.set(5, 5, 5);
+scene.add(light);
+
 rendering();
