@@ -6,6 +6,7 @@ const port = process.env.PORT || 8080;
 
 app.use("/css/", express.static('css'));
 app.use("/js/", express.static('js'));
+app.use("/node_modules/", express.static('node_modules'));
 
 // sendFile will go here
 app.get('/', function(req, res) {
